@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+    <head>
+             <meta charset="UTF-8">
+             <link rel="icon" href="icone.png">
+             <link rel= "stylesheet"  type= text/css href="style2.css" >
+             <title> Curiosidades
+             </title>
+    </head>
+
+      <body>
+        <div id = "menu">
+                  <ul>
+                         <li><a><i>Inspire-se</i></a></li>
+                            
+                            <li><a href= "index.html">Home</a></li>
+
+                            <li><a href= "sala.html">Sala</a></li>
+
+                             <li><a href= "cozinha.html">Cozinha</a></li>
+
+                              <li><a href= "quarto.html">Quarto</a></li>
+
+                            <li><a href= "banheiro.html">Banheiro</a></li>
+
+                         <li><a href= "curiosidades.html">Curiosidades</a></li>
+                           
+                    </ul>
+        </div>
+             <script>
+                var i = 0; 
+                var imagem = [];
+                var tempo = 3000;
+
+                
+                imagem [0] = 'slide1.png';
+                imagem [1] = 'slide2.png';
+                imagem [2] = 'slide3.png';
+                imagem [3] = 'slide4.png';
+                imagem [4] = 'slide5.png';
+            
+
+
+                function changeImg(){
+                    document.slide.src= imagem [i];
+                    
+                    if( i < imagem.length - 1 ) {
+                        i++;
+                    }
+                    else {
+                        i = 0;
+                    }
+                    setTimeout("changeImg()",tempo);
+                }
+
+                window.onload = changeImg;
+
+
+
+             </script>
+             
+             <img name="slide" width="900" height="300" style="margin-left: 210px;">
+
+             <div class="subtitulo">
+              <center><h1> Dicas extras</h1></center>
+              <p>Além do que já foi falado, temos aqui algumas dicas de itens e de cores para
+                  complementar com a sua decoração.
+              </p>
+             </div>
+
+
+
+
+
+           <div class="imagensdoextra">
+             <img class="imagensdoextra1" src="curiosidades1.png" >
+             
+             <img class="imagensdoextra2" src="curiosidades5.png">
+             
+             <img class="imagensdoextra3" src="curiosidadesp.png" >
+
+              <p> -Ultilizar plantas nas decorações.</p>
+             
+             <img class="imagensdoextra4" src="curiosidadeparedes1.png" >
+
+             <img class="imagensdoextra5" src="curiosidadesparedes.png">
+             <p>-A  pintura das paredes pode modificar o tamanho do cômodo, visualmente.</p>
+
+             <img class="imagensdoextra6" src="curiosidades6.png" >
+
+             <img class="imagensdoextra7" src="curiosidades8.png" style="margin: 30px;">
+              <p>-E para você que gosta de arte, recomendo quadros ou até mesmo restratos nas paredes.</p>
+            </div>
+             
+
+
+
+
+
+        <div class="rodape">
+            <p><a href= saibamais.html>Saiba mais</a></p>
+    <div class="redes-sociais">
+        <ul>
+                <li><a href="https://pt-br.facebook.com/heloiza.pereiralemos" ><img src="facebook.png" alt="Icone do Facebook"></a></li>
+                     <li><a href="https://www.instagram.com/izzalemoss/?hl=pt-br/" ><img src="instagram.png" alt="Icone do Instagram"></a></li>
+                     <li><a href="https://twitter.com/hlovemylife2" ><img src="twitter2.png" alt="Icone do Twitter"></a></li>
+                <li><a href="https://hu.pinterest.com/eloisap121/" ><img src="pinterest.png" alt="Icone do Pinterest"></a></li>
+        </ul>
+    </div>
+   <p><copyright>&copy;Heloiza Lemos 2020</copyright></p>
+</div>
+
+</body>
+</html>
